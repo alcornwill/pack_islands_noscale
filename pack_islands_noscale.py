@@ -1,10 +1,20 @@
 
-# Author: Will Alcorn 2017
-
 import bpy
 import bmesh
 from mathutils import Vector
 from bpy.props import BoolProperty, FloatProperty
+
+bl_info = {
+    "name": "Pack Islands No Scale",
+    "author": "Will Alcorn",
+    "version": (1, 0),
+    "blender": (2, 78, 0),
+    "location": "Image Edtor > UV > Pack Islands No Scale",
+    "description": "Pack Islands preserve face scale",
+    "warning": "",
+    "wiki_url": "https://github.com/alcornwill/pack_islands_noscale",
+    "category": "UV",
+    }
 
 class PackIslandsNoScale(bpy.types.Operator):
     bl_idname = 'uv.packislands_noscale'
